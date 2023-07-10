@@ -7,42 +7,32 @@
     <title>JS API</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="api.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+        <script src="api.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
  
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-6">
+    <div class=" ">
+        <div class=" ">
+            <div>
                 <h1> JS API calls Clutch</h1>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <form>
-                <label for="username">Pokemon Name:</label>
-                <input type="text" id="username" name="username" required>
-                <input type="submit" onclick="loadData()" value="Submit">
-              </form>
+        <div class=" ">
+            <form class="searchBox">
+                <label >Pokemon Name:</label>
+                <input type="text" id="pokemonName" required>
+                <button id="search">Catch</button>
+            </form>
               
-            <!-- <button onclick="loadData()">Load Pokemon</button>
-            <button onclick="clearData()">Clear Pokemon</button> -->
-            <div class="col-6">
-                <table class="table table-striped table-dark">
-                    <thead>
-                        <tr>
-                            <th>Pokemon</th>
-                        </tr>
-                    </thead>
-                    <tbody id="pokemon">
-                        <!-- <tr><th scope="row">1</th><td>the cat fact</td></tr> -->
-                    </tbody>
-
-                </table>
-            </div>
+                <div>
+                    <div class="pokemonBox"></div>
+                </div>
         </div>
-    </div>
+        <!-- <button onclick="loadData()">Load Pokemon</button>
+            <button onclick="clearData()">Clear Pokemon</button> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
